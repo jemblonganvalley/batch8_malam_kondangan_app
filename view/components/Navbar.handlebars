@@ -10,11 +10,24 @@
             kondangan-app
         </h1>
 
-        <div class="dashboard_menu">
+        <div class="dashboard_menu" onclick="showDashboardMenu()">
             {{user}} <i class="material-icons">person</i>
         </div>
     </nav>
 
+    <div class="dashboard_menu_item" >
+        <div class="db_menu_list">
+            <i class="material-icons">settings</i> Setting
+        </div>
+
+         <div class="db_menu_list">
+            <i class="material-icons">markunread</i> Undangan Saya
+        </div>
+
+         <div class="db_menu_list">
+            <i class="material-icons">logout</i> Logout
+        </div>
+    </div>
     
     {{else}}
 
@@ -48,7 +61,7 @@
 
         function menuTogle(){
             let navbar = document.querySelector('.navbar_dashboard')
-            navbar.style.width = '90%'
+            navbar.style.width = '98%'
 
             let cl = document.querySelector('.menu_togle')
             cl.style.display = 'none'
@@ -72,6 +85,22 @@
 
             let sideMenu = document.querySelector('.side_menu')
             sideMenu.style.transform = 'translateX(0)'
+        }
+
+        let show = false
+
+        function showDashboardMenu(){
+
+            let dashboard_menu_item = document.querySelector('.dashboard_menu_item')
+
+            if(!show){
+                dashboard_menu_item.style.display = 'flex'
+                show = true
+            }else{
+                dashboard_menu_item.style.display = 'none'
+                show = false
+            }
+
         }
 
 
