@@ -1,31 +1,80 @@
-<nav class="navbar">
-
-    <h1 class="brand">
-        kondangan-app
-    </h1>
 
     {{#if isLogin}}
-    <div class="user">
-        {{user}} <i class="material-icons">user</i>
-    </div>
+    
+    <nav class="navbar_dashboard">
+
+        <i class="material-icons menu_togle" onclick="menuTogle()">chevron_left</i>
+        <i class="material-icons menu_togle_back" onclick="menuTogleBack()">chevron_right</i>
+
+        <h1 class="brand">
+            kondangan-app
+        </h1>
+
+        <div class="dashboard_menu">
+            {{user}} <i class="material-icons">person</i>
+        </div>
+    </nav>
+
+    
     {{else}}
-    <ul class="menu">
 
-        <li class="menu_item">
-            <a href="/">home</a>
-        </li>
+    <nav class="navbar">
 
-        <li class="menu_item">
-            <a href="/register">register</a>
-        </li>
+        <h1 class="brand">
+            kondangan-app
+        </h1>
+        <ul class="menu">
 
-        <li class="menu_item">
-            <a href="/login">login</a>
-        </li>
+            <li class="menu_item">
+                <a href="/">home</a>
+            </li>
 
-    </ul>
+            <li class="menu_item">
+                <a href="/register">register</a>
+            </li>
+
+            <li class="menu_item">
+                <a href="/login">login</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
     {{/if}}
 
 
+    <script>
 
-</nav>
+        function menuTogle(){
+            let navbar = document.querySelector('.navbar_dashboard')
+            navbar.style.width = '90%'
+
+            let cl = document.querySelector('.menu_togle')
+            cl.style.display = 'none'
+
+            let cr = document.querySelector('.menu_togle_back')
+            cr.style.display = 'initial'
+
+            let sideMenu = document.querySelector('.side_menu')
+            sideMenu.style.transform = 'translateX(-100%)'
+        }
+
+          function menuTogleBack(){
+            let navbar = document.querySelector('.navbar_dashboard')
+            navbar.style.width = '68%'
+
+            let cl = document.querySelector('.menu_togle')
+            cl.style.display = 'initial'
+
+            let cr = document.querySelector('.menu_togle_back')
+            cr.style.display = 'none'
+
+            let sideMenu = document.querySelector('.side_menu')
+            sideMenu.style.transform = 'translateX(0)'
+        }
+
+
+
+
+    </script>
