@@ -1,0 +1,80 @@
+<main class="container-fluid dashboard">
+
+    <div class="side_menu">
+
+        <div class="side_menu_title">
+            Undangan Editor
+        </div>
+
+        <form action="/view" class="side_menu_editor" method="POST">
+
+            <div class="form_group">
+                <label for="mempelai_pria">Nama Mempelai Pria</label>
+                <input type="text" id="mempelai_pria" name="mempelai_pria" required>
+            </div>
+
+             <div class="form_group">
+                <label for="mempelai_wanita">Nama Mempelai Wanita</label>
+                <input type="text" id="mempelai_wanita" name="mempelai_wanita" required>
+            </div>
+
+            <div class="form_group">
+                <label for="tanggal_akad">Tanggal Akad</label>
+                <input type="datetime-local" id="tanggal_akad" name="tanggal_akad" required>
+            </div>
+
+            <div class="form_group">
+                <label for="tanggal_resepsi">Tanggal Resepsi</label>
+                <input type="datetime-local" id="tanggal_resepsi" name="tanggal_resepsi" required>
+            </div>
+
+             <div class="form_group">
+                <label for="lokasi">Lokasi</label>
+                <input type="text" id="lokasi" name="lokasi" required placeholder="paste lokasi gmaps disini">
+                <button >cari lokasi</button>
+            </div>
+
+             <div class="form_group">
+                <label for="pesan">Pesan Pernikahan</label>
+                <textarea id="pesan" name="pesan" required></textarea>
+            </div>
+
+             <div class="form_group">
+                <label for="font">Pilih Font</label>
+                <select name="font" id="font">
+                    <option value="">Helvetica</option>
+                    <option value="">Montserrat</option>
+                    <option value="">Arial</option>
+                    <option value="">Raleway</option>
+                </select>
+            </div>
+
+            <div class="form_group">
+                <label for="background">Pilih Background</label>
+                <select name="background" id="background">
+                    <option value="">
+                        <img src="https://picsum.photos/seed/13/200" alt="iamge-1">
+                    </option>
+
+                    <option value="">
+                        <img src="https://picsum.photos/seed/15/200" alt="iamge-1">
+                    </option>
+
+                    <option value="">
+                        <img src="https://picsum.photos/seed/16/200" alt="iamge-1">
+                    </option>
+                   
+                </select>
+            </div>
+
+            <button class="editor_save" type="submit">save</button>
+            
+
+        </form>
+
+    </div>
+
+    <section class="live_view"></section>
+
+
+</main>
