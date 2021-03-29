@@ -341,3 +341,27 @@ textarea {
   user-select: none;
   font-size: 1.25rem;
 }
+
+.lv_mempelai {
+  font-size: 4rem;
+  font-family: "Homemade Apple", cursive;
+  text-align: center;
+  color: salmon;
+}
+
+.lv_akad,
+.lv_resepsi {
+  font-weight: 300;
+  text-align: center;
+}
+
+.lv_resepsi_time {
+  color: salmon;
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.lv_pesan {
+  max-width: 600px;
+  text-align: center;
+}
