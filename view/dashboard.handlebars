@@ -10,58 +10,58 @@
 
             <div class="form_group">
                 <label for="mempelai_pria">Nama Mempelai Pria</label>
-                <input type="text" id="mempelai_pria" name="mempelai_pria" required>
+                <input type="text" id="mempelai_pria" name="mempelai_pria" required onchange="handleChange(event)">
             </div>
 
              <div class="form_group">
                 <label for="mempelai_wanita">Nama Mempelai Wanita</label>
-                <input type="text" id="mempelai_wanita" name="mempelai_wanita" required>
+                <input type="text" id="mempelai_wanita" name="mempelai_wanita" required onchange="handleChange(event)">
             </div>
 
             <div class="form_group">
                 <label for="tanggal_akad">Tanggal Akad</label>
-                <input type="datetime-local" id="tanggal_akad" name="tanggal_akad" required>
+                <input type="datetime-local" id="tanggal_akad" name="tanggal_akad" required onchange="handleChange(event)">
             </div>
 
             <div class="form_group">
                 <label for="tanggal_resepsi">Tanggal Resepsi</label>
-                <input type="datetime-local" id="tanggal_resepsi" name="tanggal_resepsi" required>
+                <input type="datetime-local" id="tanggal_resepsi" name="tanggal_resepsi" required onchange="handleChange(event)">
             </div>
 
              <div class="form_group">
                 <label for="lokasi">Lokasi</label>
-                <textarea type="text" id="lokasi" name="lokasi" required ></textarea>
-                <input type="text" id="gmaps" name="gmaps" placeholder="paste lokasi gmaps disini">
+                <textarea type="text" id="lokasi" name="lokasi" required onchange="handleChange(event)"></textarea>
+                <input type="text" id="gmaps" name="gmaps" placeholder="paste lokasi gmaps disini" onchange="handleChange(event)">
                 <button >cari lokasi</button>
             </div>
 
              <div class="form_group">
                 <label for="pesan">Pesan Pernikahan</label>
-                <textarea id="pesan" name="pesan" required></textarea>
+                <textarea id="pesan" name="pesan" required onchange="handleChange(event)"></textarea>
             </div>
 
              <div class="form_group">
                 <label for="font">Pilih Font</label>
-                <select name="font" id="font">
-                    <option value="">Helvetica</option>
-                    <option value="">Montserrat</option>
-                    <option value="">Arial</option>
-                    <option value="">Raleway</option>
+                <select name="font" id="font" onchange="handleChange(event)">
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Ralleway">Raleway</option>
                 </select>
             </div>
 
             <div class="form_group">
                 <label for="background">Pilih Background</label>
-                <select name="background" id="background">
-                    <option value="">
+                <select name="background" id="background" onchange="handleChange(event)">
+                    <option value="gambar_1">
                         <img src="https://picsum.photos/seed/13/200" alt="image-1">
                     </option>
 
-                    <option value="">
+                    <option value="gambar_2">
                         <img src="https://picsum.photos/seed/15/200" alt="image-2">
                     </option>
 
-                    <option value="">
+                    <option value="gambar_3">
                         <img src="https://picsum.photos/seed/16/200" alt="image-3">
                     </option>
                    
