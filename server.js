@@ -1,9 +1,11 @@
-//import repository yang di butuhkan
+//import repository / package yang di butuhkan
 const express = require("express");
 const hbs = require("express-handlebars");
 const cors = require("cors");
 const app = express();
 const path = require("path");
+
+//import routes yang sudah di buat
 const home = require("./routes/home_routes");
 const register = require("./routes/register_routes");
 const login = require("./routes/login_routes");
