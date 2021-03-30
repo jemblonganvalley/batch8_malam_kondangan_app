@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -365,4 +367,97 @@ textarea {
 .lv_pesan {
   max-width: 600px;
   text-align: center;
+}
+
+.btn_background {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn_background .material-icons {
+  font-size: 4rem;
+  color: gray;
+}
+
+.modal_image {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.modal_image_card {
+  width: 50%;
+  height: 90%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal_image_header {
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  background-color: whitesmoke;
+  /* margin-top: -15px; */
+}
+
+.modal_image_header input {
+  height: 35px;
+  padding: 0 10px;
+  width: 250px;
+}
+
+.modal_image_header i {
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal_image_footer {
+  margin-top: auto;
+}
+
+.modal_image_footer button {
+  height: 35px;
+  border: none;
+  outline: none;
+  user-select: none;
+  font-size: 1.25rem;
+  width: 100px;
+}
+
+.modal_image_footer button:hover {
+  background-color: salmon;
+  color: white;
+}
+
+.modal_image_footer .btn_cancel:hover {
+  background-color: gray;
+  color: white;
+}
+
+.modal_image_body {
+  overflow-y: scroll;
+  margin: 20px 0px;
+}
+
+.modal_image_body img:hover {
+  border: 3px solid salmon;
 }
